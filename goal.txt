@@ -1,0 +1,54 @@
+Actúa como un desarrollador sénior especializado en HTML, CSS y JavaScript nativo, con un ojo excepcional para el diseño de producto UI/UX moderno.
+
+Quiero que construyas una demostración completamente funcional de un catálogo para ventas por WhatsApp, pero con una estética "Premium Handcrafted", alejándote por completo de los componentes genéricos que suelen generar las IA.
+
+El objetivo es crear una demostración visual y funcional de alta fidelidad para captar clientes finales (vendedores de WhatsApp). Debe funcionar 100% del lado del cliente, sin servidores ni bases de datos.
+
+Tecnologías permitidas:
+- HTML5 (Estructura semántica limpia).
+- CSS3 (Custom Properties, Flexbox/Grid, sin frameworks como Bootstrap/Tailwind).
+- Vanilla JavaScript (Modular, usando localStorage para simular persistencia).
+- Font Awesome (Solo para iconos esenciales).
+
+=========================================
+DIRECTRICES DE DISEÑO CRÍTICAS (ANTI-IA)
+=========================================
+Para evitar el aspecto cliché de plantilla de IA, aplica estrictamente estas reglas en tu CSS:
+
+1. Paleta de Colores "Quiet Luxury":
+   - Olvida el azul brillante genérico de IA. Usa un azul de alta gama profunda o tinta japonesa para contrastes: #0F172A (Slate 900) o #1E293B.
+   - Fondos: No uses blanco puro (#FFF) para todo. Usa capas sutiles: Fondo general #F8FAFC, tarjetas en #FFFFFF, y zonas de acento en gris cálido mate #F1F5F9.
+   - Color de acción (Botones/Precios): Un azul cobalto profundo y sofisticado (#2563EB) o un verde WhatsApp extremadamente sutil y premium (#059669) usado únicamente en el paso final.
+
+2. Tipografía y Jerarquía:
+   - Usa una combinación limpia cargada desde Google Fonts: 'Plus Jakarta Sans' o 'Inter' para todo el sitio.
+   - Aplica un contraste de tamaño agresivo: Títulos de sección grandes con `letter-spacing: -0.02em` y `font-weight: 700`. Textos de descripción secundarios en un gris suave (#64748B) y tamaño pequeño (14px).
+
+3. Bordes y Sombras Humanas:
+   - No uses sombras negras difusas. Usa sombras ambientales ultra suaves basadas en la física: `box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.03), 0 10px 15px -3px rgba(15, 23, 42, 0.05);`.
+   - Radio de bordes: Usa un enfoque de diseño de producto moderno. Tarjetas de producto con `border-radius: 16px`, botones con `border-radius: 12px`.
+
+4. Layout y Detalles de Alta Fidelidad:
+   - El catálogo debe usar una rejilla asimétrica o un Grid perfectamente alineado (`gap: 24px`).
+   - Añade microinteracciones: Los botones de "Agregar" deben tener una transición suave (`transition: all 0.2s ease`) que eleve ligeramente la tarjeta o cambie el color del botón sin parpadeos de escala exagerados.
+   - El diseño móvil debe imitar una WebApp nativa (ej. barra de navegación inferior fija para móvil con accesos rápidos a: Catálogo, Carrito y Panel).
+
+========================
+ESTRUCTURA DEL ARCHIVO
+========================
+Escribe el código completo, estructurado e independiente para cada uno de los siguientes archivos, listos para producción:
+
+/index.html (Página de bienvenida elegante con CTA hacia catálogo y panel)
+/catalogo.html (Vista de productos con filtros interactivos por pestañas en la parte superior)
+/carrito.html (Desglose del pedido con diseño tipo checkout limpio)
+/admin.html (Panel de control con un diseño de Dashboard limpio: métricas en tarjetas superiores y tabla de productos abajo)
+/css/style.css (Estilos globales unificados, limpios y responsivos)
+/js/data.js (Estado inicial de productos simulados con imágenes reales de Unsplash de alta calidad)
+/js/catalogo.js (Lógica de renderizado, búsqueda, filtros y añadir a carrito)
+/js/carrito.js (Lógica de cantidades, cálculo de totales y la redirección formateada a WhatsApp)
+/js/admin.js (CRUD simulado que impacta el localStorage para que la demo sea interactiva)
+
+========================
+REQUERIMIENTO FORMATO MENSAJE WHATSAPP
+========================
+El mensaje saliente debe estar impecablemente formateado con texto enriquecido de WhatsApp:
